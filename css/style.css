@@ -8,7 +8,7 @@ body{
     color: #fff;
 }
 :root{
-    --main-color :#ff6600;
+    --main-color :#fff;
     --second-color: #2825f1;
 }
 html{
@@ -64,20 +64,20 @@ hr{
     -o-transition: 1.5s ease-in-out;
 }
 .section-header:hover{
-    transform: scale(1.4);
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 .section-header:hover .line{
-    width: 200px;
+    width: 100px;
 }
 .text-center{
     font-size: 25px;
 }
 
-@media ( max-width: 700px) {
+@media (max-width: 700px) {
     .our-services .title button:first-of-type{
         margin: 20px !important;
     }
@@ -94,6 +94,15 @@ hr{
     .footer span {
        display: block;
        padding-bottom: 30px;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    h4{
+        font-size: 20px !important;
+    }
+    .carousel-item img {
+        width: fit-content !important;
     }
 }
 /* ////////////////////////////////////////////////////////////// */
@@ -150,7 +159,7 @@ nav .collapse ul li a{
     -o-transition:.5s ease-in-out ;
 }
 nav .collapse ul li:hover a{
-    color: var(--main-color);
+    color: var(--second-color);
 }
 nav .nav-left{
     margin-top: 16px;
@@ -162,7 +171,7 @@ nav .nav-left ul li a  {
     color: #242A37 !important;
 }
 nav .nav-left ul li a:hover {
-    color: var(--main-color) !important;
+    color: var(--second-color) !important;
 }
 nav .nav-left ul li button{
     width: auto;
@@ -185,7 +194,7 @@ nav .nav-left ul li button{
     -o-transition:.5s ease-in-out ;
 }
 nav .nav-left ul li button:hover{
-    background-color: var(--main-color) ;
+    background-color: var(--second-color) ;
     border-color: black ;
 }
 /* Navbar css end */
@@ -194,7 +203,7 @@ nav .nav-left ul li button:hover{
 header{
     width: 100%;
     background: linear-gradient(#FFFFFF33 , #5FAD511A);
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.jpg); 
     background-attachment: fixed;
     height: auto;
     top: 0;
@@ -207,7 +216,7 @@ header .header-wrap .text-right{
     margin: auto;
 }
 header .header-wrap h2 {
-    color: var(--main-color);
+    color: var(--second-color);
     font-size: 30px; 
     line-height: 24px;
     margin: 110px 40px 50px 2px;
@@ -233,21 +242,21 @@ header .header-wrap h2::after{
 }
 header .header-wrap h3{
     position: relative;
-    color: var(--second-color);
+    color: var(--main-color);
    text-align: center;
     font-weight: bolder;
 }
 header .header-wrap h1{
     position: relative;
-    color: #ff6600;
+    color: #fff;
    text-align: center;
-    font-weight: bolder;
+    font-weight: 900;
     margin: 50px 0 150px 0;
 }
 header .header-wrap .text-right p{
     position: relative;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
     margin: 50px 0;
 }
@@ -272,24 +281,6 @@ header .header-wrap .img-box img:first-of-type{
     -moz-transition: 1.5s ease-in-out;
     -ms-transition: 1.5s ease-in-out;
     -o-transition: 1.5s ease-in-out;
-    animation: move2 4s ease-in-out infinite alternate ;
-    -webkit-animation: move2 4s ease-in-out infinite alternate ;
-}
-@keyframes move2{
-0%{
-   transform: scale(0);
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -ms-transform: scale(0);
-   -o-transform: scale(0);
-}
-100%{
-   transform:scale(1.2);
-   -webkit-transform:scale(1.2);
-   -moz-transform:scale(1.2);
-   -ms-transform:scale(1.2);
-   -o-transform:scale(1.2);
-}
 }
 .icon-down:hover{
     transform: scale(1.5);
@@ -555,13 +546,13 @@ color: #fff;
     transform: scale(1.1);
 }
 .card .watch-now:hover  {
-    background-color: #fff;
-    color: #ff6600;
-    border: 2px solid #ff6600;
+    background-color:var(--main-color);
+    color: var(--second-color);
+    border: 2px solid #1111;
     transform: scale(1.1);
 }
 .card .watch-now:hover a{
-    color: var(--main-color);
+    color: #111;
 }
 /* //////////////////////////////////////////////////////////////// */
 /* card end */
